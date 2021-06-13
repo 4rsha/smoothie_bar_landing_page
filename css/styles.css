@@ -1,0 +1,281 @@
+@font-face {
+  font-family: IranSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/IRANSansWeb.eot');
+  src: url(../fonts/IRANSansWeb.woff2) format('woff2'), url('../fonts/IRANSansWeb.woff') format('woff'),
+  url('../fonts/IRANSansWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IranSansBold;
+  font-weight: bold;
+  src: url('../fonts/IRANSans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IranSansBlack;
+  font-weight: bold;
+  src: url('../fonts/IRANSans_Black.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #fff;
+  font-family: IranSans;
+}
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/blob-main.png) no-repeat left top/cover;
+}
+
+.landing-page .main-content {
+  padding: 11rem 0 0 8rem;
+}
+
+.landing-page .main-content .order-button {
+  background: #000;
+  color: #fff;
+  font-family: IranSans;
+  font-size: 15px;
+  padding: .8rem 2.5rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+
+.landing-page .main-content nav {
+  margin-top: 4rem;
+  width: 50%;
+  height: auto;
+}
+
+.landing-page .main-content nav .main-menu {
+  display: flex;
+  /* direction: rtl; */
+}
+
+.landing-page .main-content nav .main-menu li {
+  padding: 0 2.5rem;
+}
+
+.landing-page .main-content nav .main-menu li:first-child {
+  padding-left: 1rem;
+}
+
+.landing-page .main-content nav .main-menu li a {
+  font-size: 16px;
+  font-family: IranSansBold;
+  color: #000;
+}
+
+.landing-page .main-content .app-download {
+  width: 40%;
+  margin-top: 7rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.landing-page .main-content .app-download h1 {
+  direction: rtl;
+  line-height: 2;
+  font-size: 24px;
+  font-family: IranSansBlack;
+}
+
+.landing-page .main-content .app-download .app-download-description {
+  margin-top: 1.5rem;
+  font-size: 17px;
+  direction: rtl;
+  margin-left: .8rem;
+  text-align: justify;
+}
+
+.landing-page .main-content .app-download .download-buttons {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page .main-content .app-download .download-buttons div {
+  display: flex;
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid #000;
+  border-radius: 14px;
+  align-items: center;
+}
+
+.landing-page .main-content .app-download .download-buttons div a {
+  direction: rtl;
+  font-size: 15px;
+  color: #000;
+  font-family: IranSansBold;
+  line-height: 1.5;
+}
+
+.landing-page .main-content .app-download .download-buttons div a span {
+  font-size: 14px;
+  color: #272626;
+  font-family: IranSans;
+}
+
+.landing-page .main-content .app-download .download-buttons svg {
+  width: 40px;
+  height: 50px;
+  margin-right: 2rem;
+}
+
+.landing-page .social-media {
+  position: absolute;
+  width: 50%;
+  bottom: 1.2rem;
+  left: 8rem;
+  height: auto;
+}
+
+.landing-page .social-media .social-media-link img {
+  width: 24px;
+  height: 25px;
+  margin: 0 1rem;
+}
+
+.landing-page .slider-container {
+  width: 48%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.landing-page .slider-container .slider-items {
+  width: 100%;
+  height: 100%;
+  transition: margin 0.7s ease-out;
+}
+
+.landing-page .slider-container .slider-items .slider-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.landing-page .slider-container .slider-items .slider-item .slide-image {
+  background: url('../img/slide-1.png') no-repeat center center/contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.landing-page .slider-container .slider-items .slider-item .slide-image2 {
+  background: url('../img/slide-2.png') no-repeat center center/contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.prev-slide {
+  display: block;
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 180px;
+  top: 89%;
+  cursor: pointer;
+}
+
+.next-slide {
+  display: block;
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 120px;
+  top: 89%;
+  cursor: pointer;
+}
+
+.landing-page .hamburger-toggle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 3rem;
+  right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.landing-page .side-menu {
+  display: none;
+  height: 100%;
+  width: 67%;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  position: fixed;
+  top: 0;
+  right: -80%;
+  bottom: 0;
+  z-index: 3;
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  padding: 4rem 2rem;
+}
+
+.landing-page .active {
+  position: fixed;
+  right: 0;
+}
+
+.landing-page .side-menu svg {
+  position: absolute;
+  top: 2.3rem;
+  right: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.landing-page .side-menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  margin-top: 3rem;
+}
+
+.landing-page .side-menu ul li {
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.landing-page .side-menu ul li a {
+  color: #000;
+  font-size: 20px;
+  font-family: IranSansBold;
+}
+
